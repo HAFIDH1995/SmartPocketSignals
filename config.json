@@ -1,0 +1,51 @@
+{
+    "ai_providers": {
+        "openai": {
+            "api_key": "",
+            "model": "gpt-3.5-turbo",
+            "enabled": true,
+            "weight": 0.25
+        },
+        "deepseek": {
+            "api_key": "",
+            "model": "deepseek-chat",
+            "enabled": true,
+            "weight": 0.20
+        },
+        "groq": {
+            "api_key": "",
+            "model": "mixtral-8x7b-32768",
+            "enabled": true,
+            "weight": 0.20
+        },
+        "manus": {
+            "api_key": "",
+            "model": "manus-chat",
+            "enabled": true,
+            "weight": 0.20
+        },
+        "grok": {
+            "api_key": "",
+            "model": "grok-beta",
+            "enabled": true,
+            "weight": 0.15
+        }
+    },
+    "confidence_calculation": {
+        "technical_weight": 0.6,
+        "ai_weight": 0.4,
+        "min_ai_approvals": 2,
+        "min_final_confidence": 70
+    },
+    "pocket_option": {
+        "websocket_url": "wss://pocket-option.com/ws",
+        "timeout": 30,
+        "retry_attempts": 3
+    },
+    "analysis_settings": {
+        "timeframes": ["5s", "10s", "15s", "30s", "1m", "2m", "3m", "5m", "10m", "15m", "30m", "1h", "4h", "1d"],
+        "min_candles": 50,
+        "max_analysis_time": 120
+    }
+}
+
